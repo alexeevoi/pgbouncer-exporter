@@ -1,0 +1,6 @@
+pgbouncers:
+  pgb1:
+    connection: "postgres://pgbouncer@localhost:6432?sslmode=disable"
+  pgb2:
+    connection: "postgres://pgbouncer@localhost123:6431?sslmode=disable"
+metrics_host: "lodf23fewfew8081\\"

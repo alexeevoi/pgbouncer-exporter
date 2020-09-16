@@ -1,0 +1,29 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:11
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+  pgbouncer:
+    build:
+      context: pgbouncer/.
+      args:
+        pgbversion: 1.12.0
+    volumes:
+      - .:/vol
+    links:
+      - postgres
+    ports:
+      - "6432:6432"
+  odyssey:
+    build:
+      context: odyssey/.
+      args:
+        version: 1.1
+    ports:
+      - "6532:6432"
+    volumes:
+      - ./odyssey.conf:/etc/odyssey/odyssey.conf

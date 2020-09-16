@@ -1,0 +1,8 @@
+pgbouncers:
+  pgb1:
+    connection: "postgres://pgbouncer@localhost:6432?sslmode=disable"
+  ody1:
+    connection: "postgres://odyssey@localhost:6532?sslmode=disable"
+  pgb2:
+    connection: "postgres://pgbouncer@localhost123:6431?sslmode=disable"
+metrics_host: "localhost:8080"
