@@ -47,8 +47,8 @@ Pooling_mode выводится в формате:
     Creating docker_odyssey_1   ... done  
     Creating docker_pgbouncer_1 ... done  
     go test ./... -coverprofile c.out  
-    ?       git.ozon.dev/oalekseev/pgbouncer-exporter/cmd/pgbouncer-exporter        [no test files]  
-    ok      git.ozon.dev/oalekseev/pgbouncer-exporter/internal/collector    0.037s  coverage: 83.5% of statements  
-    ok      git.ozon.dev/oalekseev/pgbouncer-exporter/internal/pgbouncer-exporter   0.008s  coverage: 84.6% of statements  
-    ok      git.ozon.dev/oalekseev/pgbouncer-exporter/internal/pgbrepo      0.013s  coverage: 86.5% of statements  
+    ?       github.com/alexeevoi/pgbouncer-exporter/cmd/pgbouncer-exporter        [no test files]  
+    ok      github.com/alexeevoi/pgbouncer-exporter/internal/collector    0.037s  coverage: 83.5% of statements  
+    ok      github.com/alexeevoi/pgbouncer-exporter/internal/pgbouncer-exporter   0.008s  coverage: 84.6% of statements  
+    ok      github.com/alexeevoi/pgbouncer-exporter/internal/pgbrepo      0.013s  coverage: 86.5% of statements  
 
